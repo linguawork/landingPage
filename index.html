@@ -21,8 +21,10 @@
     .block {}
     .block__element {}
     .block--modifier {} -->
-        <div class="header__top">upper header
-            <div class="container">
+        <div class="header__top">
+            <!-- header__contacts class is to solve float problem: the sub
+            classes just need one common parent -->
+            <div class="container" class="header__contacts" >
                 <!-- href val will set the call -->
                 <a class="header__phone" href="tel: +1 983 457 298 35">+1 983 457 298 35</a>
                 <!-- href val will set to send mail,  -->

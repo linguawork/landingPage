@@ -42,12 +42,61 @@ body{
 font-family: 'Roboto', sans-serif;
 font-weight: 400; 
 /* 30:41 */
+font-size: 14px;
+line-height: 18px;
+color: #5e5e5e;
+}
+
+.header{
+    font-family: "Roboto", sans-serif;
+
 }
 
 .header__top{
     background-color: #303030;
 }
 
+/* yellow button */
+/* clear: both */ 
+/* clear means hiding behind a floated element */
 .header__btn{
     float: right;
+    line-height: 36px;
+    /* this is moved up to the level of header, as it is repeated 
+    on other header classes */
+    /* font-family: "Roboto", sans-serif; */
+    background-color: #fcc222;
+    padding: 5px 20px 4px 50px;
+    font-size: 16px;
+    
+}
+
+
+/* content can have values:  */
+
+/* header__bin is changed to header_contacts to be the common parent for floats */
+.header__btn::after{
+    content: "";
+    clear: both;
+    display: block;
+    
+}
+
+.header__phone, 
+.header__email{
+    letter-spacing: .25px;
+    color: #cbcacb;
+    line-height: 45px;
+}
+
+.header__phone{
+    /* this gap is needed for pictures */
+    padding-left: 20px;
+    padding-right: 30px;
+}
+
+.header__email{
+    /* this gap is needed for picture */
+    padding-left: 24px;
+
 }

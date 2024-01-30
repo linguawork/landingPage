@@ -1,3 +1,14 @@
+/*
+    The work is done according to the layout template
+    made in Photoshop
+ */
+
+ /*
+ google fonts used: 
+
+ */
+
+
 /* paddings and borders are included in the size */
 *{
     box-sizing: border-box;
@@ -24,13 +35,19 @@ li{
     margin: 0 auto;
     /* top and bottom/ left-right */
     padding: 0 15px;
-
 }
 
 body{
-
+/* font-family: 'PT Serif', serif;  */
+font-family: 'Roboto', sans-serif;
+font-weight: 400; 
+/* 30:41 */
 }
 
 .header__top{
     background-color: #303030;
+}
+
+.header__btn{
+    float: right;
 }

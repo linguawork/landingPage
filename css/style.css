@@ -75,7 +75,7 @@ color: #5e5e5e;
 /* content can have values:  */
 
 /* header__bin is changed to header_contacts to be the common parent for floats */
-.header__btn::after{
+.header__contacts::after{
     content: "";
     clear: both;
     display: block;
@@ -99,4 +99,54 @@ color: #5e5e5e;
     /* this gap is needed for picture */
     padding-left: 24px;
 
+}
+
+
+/* aligning logo and other items inside header__content class */
+.header__content{
+ padding: 34px 0px 23px;
+
+}
+
+
+/* this is the inserted class, 
+it will be the parent for the items in menu. The order of classes in
+css file is important, it goes in the same order as the html dom file */
+.header__content-inner{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* to put all the menu items in one line, need inline-block display */
+.menu li{
+    display: inline-block;
+}
+
+
+/* to send the items in header__content apart one common parent should 
+be made */
+.menu a{
+    color: #323232;
+    font-size: 16px; 
+    line-height: 36px;
+    /* 
+    reserving the border-color for hover effect,
+    need to set it as transparent 
+    */
+    border: solid 1px transparent;
+    padding: 0px 16px;
+
+    /* making all elements slower, if there is any transition, 
+    here: hover */
+    transition: all .5s;
+}
+
+.menu a:hover{
+    border-color:  #fcc222
+}
+
+
+/* gap between the list items, interesting way of selectors*/
+.menu li + li{
+    padding-left: 10px;
 }

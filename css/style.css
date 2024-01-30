@@ -1,0 +1,36 @@
+/* paddings and borders are included in the size */
+*{
+    box-sizing: border-box;
+}
+
+a{
+/* removing underline in all the anchors */
+    text-decoration: none;
+    display: inline-block;
+}
+
+/* list-style!*/
+ul,
+li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    /* adaptive layout, to avoid lower scroll */
+    max-width: 1170px;
+    /* for centering */
+    margin: 0 auto;
+    /* top and bottom/ left-right */
+    padding: 0 15px;
+
+}
+
+body{
+
+}
+
+.header__top{
+    background-color: #303030;
+}

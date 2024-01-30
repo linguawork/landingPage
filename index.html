@@ -1,14 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!-- cross browser style: https://necolas.github.io/normalize.css/ -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
-<body>  
+
+<body>
     <header class="header">
-        <div class="header__top"></div>
-        <div class="header__content"></div>
+        <!-- BEM practice:
+    .block {}
+    .block__element {}
+    .block--modifier {} -->
+        <div class="header__top">upper header
+            <div class="container">
+                <a href="#">+1 983 457 298 35</a>
+                <a href="#">ulana@gmail.com</a>
+                <a href="#">Free consulting</a>
+            </div>
+        </div>
+
+        <div class="header__content">
+            <!-- 
+                Emmet nested writing
+            .header__logo>a[href="#"]>img[src=img/logo.png]
+             -->
+            <div class="container">
+                <div class="header__logo">
+                    <a href="#">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </div>
+
+                <nav class="menu">
+                    <!--  
+                        ul>li*4>a[href=#]
+                    -->
+                    <ul>
+                        <li><a href="#">Main</a></li>
+                        <li><a href="#">About company</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Contacts</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+        </div>
+
     </header>
 </body>
+
 </html>
